@@ -12,6 +12,10 @@ connectDB();
 app.use(express.json());
 app.use("/",apiRouter);
 
+app.get("/",(req,res)=>{
+    res.send(`<h1>school management API</h1>`)
+})
+
 
 app.listen(port,()=>{
 
