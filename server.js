@@ -10,7 +10,7 @@ const port = process.env.PORT || 4000 ;
 connectDB();
 
 app.use(express.json());
-app.use("/",apiRouter);
+app.use("/api",apiRouter);
 
 app.get("/",(req,res)=>{
     res.send(`<h1>school management API</h1>`)
